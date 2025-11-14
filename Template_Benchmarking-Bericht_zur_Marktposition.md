@@ -25,5 +25,3 @@ Stand:
 ## Onboarding & Legitimation
 
 ## Fazit
-
-## Priorisierte Handlungsempfehlungen
