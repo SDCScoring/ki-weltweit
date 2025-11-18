@@ -1,0 +1,34 @@
+@font-face{
+	font-family: 'Sparkasse Lt';
+	/*Brief path works on one PC, but not on another... god knows why tho*/
+	/*src: url('fonts/SparLt.ttf') format('truetype');*/
+	src: url('K:\\Datentausch\\Forschung\\Forschungsdaten\\Vergleich AIs\\Nutzung von KI in Banken\\n8n Output\\fonts\\SparLt.ttf') format('truetype');
+}
+@font-face{
+	font-family: 'Sparkasse Rg';
+	/*src: url('fonts/SparRg.ttf') format('truetype');*/
+	src: url('K:\\Datentausch\\Forschung\\Forschungsdaten\\Vergleich AIs\\Nutzung von KI in Banken\\n8n Output\\fonts\\SparRg.ttf') format('truetype');
+}
+
+body {
+	font-family: 'Sparkasse Lt';
+	font-size: 10px;
+	font-weight: normal;
+	color: black;
+	text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Sparkasse Rg';
+	font-weight: bold;
+	color: red;
+	text-align: left;
+}
+
+.logo {
+	position: fixed;
+	float: right;
+	align-items: right;
+	width: 100px;
+	right: 50px;
+}
