@@ -1,0 +1,716 @@
+{
+  "name": "Benchmarkingbericht KI in der SFGI",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -496,
+        0
+      ],
+      "id": "cfa79060-ec1b-4922-a447-5f62d0c49c3e",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Das Output muss als Markdown-Dokument formatiert sein, d.h. die Überschrift sollte mit einem # eingeleitet werden, Unterkapitel mit ##, etc. Verwende das angegebene Template für die Struktur des Dokuments.\nGeneriere einen möglichst objektiven bzw. kritischen Benchmarking-Bericht als Fließtext zur Marktposition der Sparkassenfinanzgruppe in Bezug auf KI-Anwendungen. Vergleiche dazu die internen \"KISPA KI-Anwendungsfälle\" (Sparkassen) mit den externen Anwendungsfällen der internationalen Wettbewerber. Die Daten sind am Ende des Prompts als JSON-Strings angehangen.\nFür die Struktur des Berichtes: gehe in Fließtextform (d.h. nicht stichpunkt-artig) auf die verschiedenen Kategorien des Datenfeldes \"KI-Landkarte\" der externen Fälle ein, d.h. bspw. \"IT & IT-Sicherheit\" oder \"Betriebliche Steuerung\", und bewerte jeweils kritisch, wie die Sparkassen im Vergleich zu den internationalen Wettbewerbern abschneiden. Versuche, den Usecases der SFG eine Nomierung (im Bereich 1-10) zuzuweisen, wobei der Score 10 dem besten Projekt aus dem internationalen Wettbewerb entspricht. Sofern Projekte namentlich erwähnt werden, müssen diese aus den Input-Tabellen stammen - auf keinen Fall darf auf Projekte Bezug genommen werden, die nicht in den Tabellen vorkommen. Der Bericht sollte überwiegend in Form von Fließtext geschrieben werden, nicht in Stichpunkten. Die Verwendung von Anglizismen sollte im Rahmen gehalten werden, auch Abkürzungen (insbesondere englischsprachige) dürfen nur in Maßen verwendet werden und sind bei ihrem ersten Auftreten zu erklären. Der Text sollte auch für Laien gut verständlich sein.\nDer resultierende Bericht sollte keinen Autor oder Urheber aufweisen. Das aktuelle Datum ist ({{ $today.toLocaleString() }}). Denke an die Formatierung mit Markdown.\n\ninterne KI-Anwendungen: {{ $(\"interne KI-Anwendungen\").item.json.data.toJsonString() }}\n\nexterne KI-Anwendungen: {{ $(\"externe KI-Anwendungen\").first().json.data.toJsonString() }}\n\nTemplate: {{ $(\"Markdown Template\").first().json.data.toJsonString() }}",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        608,
+        16
+      ],
+      "id": "e0f502b8-2918-40fb-86cf-e6b41cf79cfe",
+      "name": "AI Agent",
+      "executeOnce": true,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-5",
+          "mode": "list",
+          "cachedResultName": "gpt-5"
+        },
+        "options": {
+          "maxTokens": -1,
+          "timeout": 360000
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        768,
+        304
+      ],
+      "id": "b53912f5-16a6-4e18-97e5-92092fe3db55",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "PeqTwBs2SLamw6ek",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "owner": {
+          "__rl": true,
+          "value": "SDCScoring",
+          "mode": "name"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "ki-weltweit",
+          "mode": "list",
+          "cachedResultName": "ki-weltweit",
+          "cachedResultUrl": "https://github.com/SDCScoring/ki-weltweit"
+        },
+        "filePath": "=berichte/",
+        "binaryData": true,
+        "commitMessage": "=bericht-{{$now}}"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        1408,
+        -160
+      ],
+      "id": "27e98123-21f9-4ee5-a461-c79c66e350e5",
+      "name": "Create a file",
+      "webhookId": "89b7f8b1-828d-41f4-b53c-aa5469d5dde0",
+      "credentials": {
+        "githubApi": {
+          "id": "4dKGdiSfzQm8g503",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "xlsx",
+        "options": {
+          "range": ""
+        }
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        -80,
+        -80
+      ],
+      "id": "5c1fa146-fbc6-4ef8-ac1f-0dc573391048",
+      "name": "interne KI-Anwendungen Extraction"
+    },
+    {
+      "parameters": {
+        "operation": "xlsx",
+        "options": {
+          "includeEmptyCells": true,
+          "range": "B1:N411"
+        }
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        -80,
+        96
+      ],
+      "id": "287fa3af-3729-47be-a1bb-06dd327c6c86",
+      "name": "externe KI-Anwendungen Extraction"
+    },
+    {
+      "parameters": {
+        "jsCode": "const item = $input.first();\nconst text = item.json.output;\nconst unicodeText = text\n  .split(\"\")\n  .map((char) => \"\\\\u\" + char.charCodeAt(0).toString(16))\n  .join(\"\");\n//item.json.unicodeText = unicodeText;\nitem.json.output = unicodeText;\nreturn item;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        944,
+        -352
+      ],
+      "id": "654acfa6-89c6-41be-a053-88f7eef7ecdf",
+      "name": "Code"
+    },
+    {
+      "parameters": {
+        "url": "https://github.com/SDCScoring/ki-weltweit/raw/refs/heads/main/20250815_KISPA_KI_abridged.xlsx",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -288,
+        -80
+      ],
+      "id": "a80c9fca-a53f-4d2a-ba9f-96dd446b9e78",
+      "name": "interne KI-Anwendungen Excel"
+    },
+    {
+      "parameters": {
+        "url": "https://github.com/SDCScoring/ki-weltweit/raw/refs/heads/main/20251127_Externe_KI_Use_Cases_abridged.xlsx",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -288,
+        96
+      ],
+      "id": "52422f67-d45c-4f5b-98d8-4596de37fdc2",
+      "name": "externe KI-Anwendungen Excel",
+      "credentials": {
+        "githubApi": {
+          "id": "4dKGdiSfzQm8g503",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "aggregate": "aggregateAllItemData",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        96,
+        -80
+      ],
+      "id": "8107b9bc-8b39-48b8-9562-ad5ba5c66018",
+      "name": "interne KI-Anwendungen"
+    },
+    {
+      "parameters": {
+        "aggregate": "aggregateAllItemData",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        96,
+        96
+      ],
+      "id": "43176a70-324c-40e6-920a-68bdf21cdefb",
+      "name": "externe KI-Anwendungen"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        336,
+        -240
+      ],
+      "id": "2c9cf052-dcfe-4c72-9985-d1a4ddb076ef",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "numberInputs": 4
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        336,
+        16
+      ],
+      "id": "64731c50-11fd-4f9a-89b7-5400424969ba",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "url": "https://github.com/SDCScoring/ki-weltweit/raw/refs/heads/main/20250815_KISPA_KI_abridged.csv",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -784,
+        368
+      ],
+      "id": "485de7ee-a7b1-4f39-b818-e80375efa25a",
+      "name": "externe KI-Anwendungen Excel1"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        -576,
+        368
+      ],
+      "id": "3177b8ce-ba48-4a77-b6b6-210d52118276",
+      "name": "Extract from File"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "8bc37300-966b-4f28-8cc1-7a25f37cd905"
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        336,
+        -384
+      ],
+      "id": "09ea617a-a43d-42ba-b93d-eef08244e017",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.5-pro",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        608,
+        304
+      ],
+      "id": "eef2ec23-4657-4b4a-b232-91499807a146",
+      "name": "Google Gemini Chat Model",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "S3KgwvIjub9H1ysp",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": "codestral-2508",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatMistralCloud",
+      "typeVersion": 1,
+      "position": [
+        448,
+        304
+      ],
+      "id": "80631437-0950-41aa-8bda-7ce9e17529fd",
+      "name": "Mistral Cloud Chat Model",
+      "credentials": {
+        "mistralCloudApi": {
+          "id": "gZs2lpBc5js4pdKQ",
+          "name": "Mistral Cloud account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://github.com/SDCScoring/ki-weltweit/raw/refs/heads/main/Template_Benchmarking-Bericht_zur_Marktposition.md",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -288,
+        288
+      ],
+      "id": "f246b70d-2adf-45a0-a566-8a6656e272f5",
+      "name": "Markdown Template"
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "output",
+        "options": {
+          "encoding": "utf8",
+          "fileName": "=GPT-5-{{ $now.format(\"yyyy-LL-dd_HH-mm-ss\") }}.md"
+        }
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        1248,
+        -160
+      ],
+      "id": "92166128-913a-45cc-9ae8-2ac49f811c41",
+      "name": "Markdown to File"
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "output",
+        "options": {
+          "encoding": "utf8",
+          "fileName": "=GPT-5-{{ $now.format(\"yyyy-LL-dd_HH-mm-ss\") }}.html"
+        }
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        1248,
+        208
+      ],
+      "id": "f8d05bff-d38b-407d-9fc0-62d123ad9578",
+      "name": "HTML to File"
+    },
+    {
+      "parameters": {
+        "mode": "markdownToHtml",
+        "markdown": "={{ $json.output }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.markdown",
+      "typeVersion": 1,
+      "position": [
+        1008,
+        16
+      ],
+      "id": "6870689b-55d6-4c4f-bca6-3d07536068bd",
+      "name": "Markdown to HTML"
+    },
+    {
+      "parameters": {
+        "html_content": "={{ $json.data }}",
+        "css_content": "={{ $('CSS File').item.json.data }}",
+        "response_format_html": "base64"
+      },
+      "type": "n8n-nodes-htmlcsstopdf.htmlcsstopdf",
+      "typeVersion": 1,
+      "position": [
+        1248,
+        16
+      ],
+      "id": "260c8116-c34b-49f8-b830-553a9c492b2a",
+      "name": "HTML to PDF",
+      "credentials": {
+        "htmlcsstopdfApi": {
+          "id": "f9wdgkFXAGYQufVx",
+          "name": "HTML to PDF account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://github.com/SDCScoring/ki-weltweit/raw/refs/heads/main/mk-to-pdf.css",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -288,
+        464
+      ],
+      "id": "b11189c0-0cfb-4400-9985-d10ac14488bc",
+      "name": "CSS File"
+    },
+    {
+      "parameters": {
+        "operation": "toBinary",
+        "sourceProperty": "pdf_url",
+        "options": {
+          "fileName": "=GPT-5-{{ $now.format(\"yyyy-LL-dd_HH-mm-ss\") }}.pdf"
+        }
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        1408,
+        16
+      ],
+      "id": "73603792-f3e0-45aa-9725-34a566a25a6a",
+      "name": "Convert to File"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Loop over input items and add a new field called 'myNewField' to the JSON of each one\n//for (const item of $input.all()) {\n//  item.json.myNewField = 1;\n//}\n\n//return $input.all();\n\nconst script = document.createElement('script');\nscript.src = 'https://github.com/evidenceprime/html-docx-js/raw/refs/heads/master/dist/html-docx.js';\nscript.async = false;//true;\ndocument.head.appendChild(script);\n\nlet html_str = $input.first().json.data\nlet docx = htmlDocx.asBlob(html_str)\nsaveAs(docx, 'output.docx')"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1248,
+        400
+      ],
+      "id": "1d985433-4592-441c-8c8d-6ffa3b217ec5",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "content": "## Temperature\nkann für GPT-5 woh nicht eingesellt werden"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        704,
+        464
+      ],
+      "id": "d33d0d17-8b87-4fc8-9d6a-7f612325cc7f",
+      "name": "Sticky Note"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "externe KI-Anwendungen Excel",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "interne KI-Anwendungen Excel",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Markdown Template",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "CSS File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Markdown to File",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Markdown to HTML",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "interne KI-Anwendungen Extraction": {
+      "main": [
+        [
+          {
+            "node": "interne KI-Anwendungen",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "externe KI-Anwendungen Extraction": {
+      "main": [
+        [
+          {
+            "node": "externe KI-Anwendungen",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        []
+      ]
+    },
+    "interne KI-Anwendungen Excel": {
+      "main": [
+        [
+          {
+            "node": "interne KI-Anwendungen Extraction",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "externe KI-Anwendungen Excel": {
+      "main": [
+        [
+          {
+            "node": "externe KI-Anwendungen Extraction",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "interne KI-Anwendungen": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "externe KI-Anwendungen": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "externe KI-Anwendungen Excel1": {
+      "main": [
+        [
+          {
+            "node": "Extract from File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        []
+      ]
+    },
+    "Mistral Cloud Chat Model": {
+      "ai_languageModel": [
+        []
+      ]
+    },
+    "Markdown Template": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 2
+          }
+        ]
+      ]
+    },
+    "Markdown to File": {
+      "main": [
+        [
+          {
+            "node": "Create a file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Markdown to HTML": {
+      "main": [
+        [
+          {
+            "node": "HTML to PDF",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTML to File": {
+      "main": [
+        []
+      ]
+    },
+    "CSS File": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 3
+          }
+        ]
+      ]
+    },
+    "HTML to PDF": {
+      "main": [
+        [
+          {
+            "node": "Convert to File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "1cdfc1cc-2a87-43da-ad47-b8ae80de5bb8",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "27e6948e186beec766257aa310742ad636c5bc84d72de311cebb9a04ff9e210b"
+  },
+  "id": "i7kZ08kZJAEReqjM",
+  "tags": []
+}
