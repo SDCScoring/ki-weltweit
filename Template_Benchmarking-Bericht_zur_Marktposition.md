@@ -1,5 +1,6 @@
 # Benchmarking-Bericht zur Marktposition der Sparkassen-Finanzgruppe in Bezug auf KI-Anwendungen
 
+Dieses Dokument wurde von generativer KI erzeugt.
 Stand:
 
 ## Kurzfazit
