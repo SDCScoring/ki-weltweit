@@ -6,15 +6,44 @@ Stand:
 ## Bewertungsindex: Wie „Disruption“ in diesem Bericht gemessen wird
 
 ## Die sieben Merkmalscluster
-| Cluster | Name |
-| --- | ---  |
-| A | Interaktions- und Interface-Disruption |
-| B | Disintermediation der Kundenschnittstelle |
-| C | Wertschöpfungs- und Rollenverschiebung |
-| D | Entkopplung von Entscheidungs- und Ausführungsebene |
-| E | Governance-, Risiko- und Haftungsdisruption |
-| F | Daten- und Lernhoheit |
-| G | Ökosystem- und Plattformdisruption |
+<table>
+<thead>
+<tr>
+<th>Cluster</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>Interaktions- und Interface-Disruption</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Disintermediation der Kundenschnittstelle</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Wertschöpfungs- und Rollenverschiebung</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Entkopplung von Entscheidungs- und Ausführungsebene</td>
+</tr>
+<tr>
+<td>E</td>
+<td>Governance-, Risiko- und Haftungsdisruption</td>
+</tr>
+<tr>
+<td>F</td>
+<td>Daten- und Lernhoheit</td>
+</tr>
+<tr>
+<td>G</td>
+<td>Ökosystem- und Plattformdisruption</td>
+</tr>
+</tbody>
+</table>
 
 ## Deterministische Auswahl- und Bewertungsmethode
 
