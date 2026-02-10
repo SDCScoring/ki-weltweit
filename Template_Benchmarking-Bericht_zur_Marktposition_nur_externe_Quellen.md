@@ -1,7 +1,6 @@
 # Benchmarking-Bericht zur Marktposition der Sparkassen-Finanzgruppe in Bezug auf KI-Anwendungen
 
-Basierend auf externen Quellen (Websuche), d.h. ohne Zugriff auf KISPA-Daten oder die Datenbank "KI weltweit".
-Dieses Dokument wurde von generativer KI erzeugt.
+Dieses Dokument wurde von generativer KI erzeugt. Es ist keine Kuration oder inhaltliche Prüfung durch einen Menschen erfolgt; das Dokument ist ausschließlich als Impuls zu verstehen.
 Stand:
 
 ## Kurzfazit
@@ -25,6 +24,5 @@ Stand:
 ## Querschnittsfunktionen
 
 ## Onboarding & Legitimation
-
 
 ## Fazit
