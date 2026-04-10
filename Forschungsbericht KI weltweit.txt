@@ -1,0 +1,298 @@
+
+
+
+ 
+
+KI-Anwendungen im Ban-kensektor weltweit
+
+HFM Forschungsbericht
+Prof. Dr. Dirk Neuhaus und Salim Willems
+Stand: 10. August 2025
+ 
+Inhaltsverzeichnis
+Abbildungsverzeichnis	III
+Management Summary	1
+1.	Einleitung	1
+1.1.	Zielsetzung	1
+1.2.	Bedeutung von KI im Bankwesen	1
+1.3.	Methodik	1
+2.	Ergebnisse	3
+2.1.	Globale Verteilung von KI-Anwendungen in Banken	3
+2.2.	Verteilung nach Kontinenten	4
+2.3.	Verteilung nach Einführungsjahr	5
+2.4.	Verteilung nach Nutzergruppen	6
+2.5.	Verteilung nach Nutzenpotential	8
+2.6.	Verortung in der KI-Landkarte	10
+2.7.	Risikoklassifizierung nach dem EU AI-Act	13
+Anhang	16
+
+ 
+Abbildungsverzeichnis
+Abbildung 2.1 KI-Projekte nach Land	3
+Abbildung 2.2 TOP 10 nach Länderm	4
+Abbildung 2.3 KI-Projekte nach Kontinent	4
+Abbildung 2.4 KI-Projekte nach Einführungsjahr	5
+Abbildung 2.5 KI-Projekte nach Anwender	6
+Abbildung 2.6 KI-Projekte nach zentralen Organisationsbereichen	7
+Abbildung 2.7 Verteilung nach Nutzenpotential	9
+Abbildung 2.8 Verortung der KI-Anwendungen in der KI-Landkarte	11
+Abbildung 2.9 Verteilung nach Risikoklassifizierung EU AI-Act	14
+
+ 
+ 
+Management Summary
+Der vorliegende Forschungsbericht analysiert den produktiven Einsatz von KI in Banken weltweit. Die Studie basiert auf einer strukturierten Erhebung von An-wendungsfällen seit 2023 und wird durch aktuelle Markt- und Studienquellen ergänzt.
+Im Zentrum der Untersuchung steht die Frage, wo, wie und mit welchem Ziel Banken heute KI einsetzen. Die Ergebnisse zeigen ein klares Bild: Der Einsatz von KI ist global spürbar – konzentriert sich aber stark auf wenige Länder mit hohem Digitalisierungsgrad und ausgeprägter Innovationskultur. Technologisch führende Volkswirtschaften wie die USA und westeuropäische Länder überneh-men dabei eine Vorreiterrolle.
+Inhaltlich dominiert eine operative Nutzungsperspektive: Banken setzen KI be-vorzugt dort ein, wo Prozesse automatisiert, Ressourcen eingespart oder Kun-den effizienter bedient werden können. Der Fokus liegt auf internen Assistenz-systemen, Chatbots, Empfehlungslösungen und Analytik – häufig im direkten Kundenkontakt. Entsprechend stark ist die Verankerung von KI im Vertrieb und Service.
+Strategische oder regulatorisch komplexe Anwendungsfelder wie Risikoma-nagement, Compliance oder IT-Sicherheit sind bislang deutlich seltener be-setzt. Auch der Einsatz von hochriskanten KI-Systemen – etwa für automatisier-te Kreditentscheidungen – bleibt die Ausnahme. Viele Institute bewegen sich damit bewusst in risikoarmen Bereichen, was schnelle Umsetzung, geringere Anforderungen bezüglich Datenschutz und EU AI-Act sowie an Governance-Strukturen begünstigt.
+Gleichzeitig wird sichtbar, dass sich Banken zunehmend in Richtung datenge-triebener Geschäftsmodelle entwickeln. Der KI-Einsatz wird breiter, reifer und funktional vielseitiger. Doch der Weg zur strategischen Durchdringung – hin zu innovativen Produkten, adaptiven Systemen und vertrauenswürdiger KI – ist noch nicht vollzogen.
+Für Entscheidungsträger ergibt sich daraus ein doppelter Handlungsbedarf: Einerseits gilt es, bestehende Anwendungen gezielt zu skalieren und die opera-tive Basis zu festigen. Andererseits braucht es Mut und Struktur, um auch neue, erklärungsbedürftige und strategisch kritische KI-Felder verantwortungsvoll zu erschließen.
+
+ 
+1.	Einleitung
+1.1.	Zielsetzung
+Die Studie liefert ein empirisches Bild zur globalen KI-Nutzung.
+Der Forschungsbericht zeigt ein empirisch fundiertes Bild über die globale Nut-zung von Künstlicher Intelligenz (KI) im Bankensektor. Dabei liegt der Fokus sowohl auf der quantitativen Analyse von KI-Anwendungsfällen in 75 Ländern als auch auf qualitativen Erkenntnissen über strategische Ziele, Nutzeneffekte und Risiken. Als zentrale Datengrundlage dient eine empirische Studie ab dem Jahr 2023.
+1.2.	Bedeutung von KI im Bankwesen
+KI beschleugnigt den Transformationsprozess bei Banken.
+KI-Technologien verändern den Bankensektor grundlegend – von der Automati-sierung repetitiver Aufgaben bis zur Generierung personalisierter Finanzbera-tung. Generative KI (GenAI) ermöglicht es Banken heute, skalierbare Lösungen für Front‑, Middle‑ und Backoffice-Prozesse zu schaffen. Laut McKinsey (2024a) könnten durch GenAI jährlich bis zu 340 Mrd. USD an zusätzlichem Wert im Bankwesen entstehen. Nach einer Prognose der Unternehmensberatung Roland Berger birgt der Einsatz Künstlicher Intelligenz (KI) im internationalen Bankwe-sen bis zum Jahr 2030 ein erhebliches Wertschöpfungspotenzial. So könnten durch KI-basierte Innovationen zusätzliche Erlösquellen im Umfang von rund einer Billion USD erschlossen werden. Parallel dazu wird erwartet, dass sowohl operative Aufwendungen als auch risikobedingte Kosten um bis zu 30 % redu-ziert werden können (Roland Berger 2024). Der Wettbewerb um datenbasierte Geschäftsmodelle wird zunehmend härter, wobei klassische Banken in direkten Konkurrenzkampf mit Fintechs und Big-Tech-Unternehmen treten (McKinsey, 2024b; Accenture, 2024).
+1.3.	Methodik
+Die primäre Datengrundlage dieses Berichts ist eine strukturierte Sammlung produktiv eingesetzter KI-Anwendungen im Bankensektor seit August 2023 mit laufender Aktualisierung. Die Methodik orientiert sich an einem systematischen Desktop-Research-Verfahren mit folgenden Kriterien:
+	Institutionstypen: Die Analyse berücksichtigt ausschließlich Retailban-ken, Großbanken, Investmentbanken, Landesbanken sowie weitere Kre-ditinstitute, die der von der Deutschen Bundesbank verwendeten Klassi-fikation entsprechen.
+	Ausgeschlossen wurden Versicherungsunternehmen, Baufinanzierer, Spezialbanken (z. B. Förderbanken, Pfandbriefbanken) sowie Kreditkar-tengesellschaften, um die Vergleichbarkeit innerhalb des Bankensek-tors zu wahren.
+	Status der Anwendungen: Es wurden ausschließlich KI-Anwendungen im produktiven Betrieb berücksichtigt. Experimentelle, geplante oder rein konzeptionelle Vorhaben wurden bewusst ausgeschlossen, um den Rei-fegrad der KI-Adoption realitätsnah abzubilden.
+	Zeitraum: Die Datenerhebung begann im August 2023. Seitdem wird die Liste fortlaufend ergänzt und aktualisiert, sodass auch jüngste Entwick-lungen bis August 2025 berücksichtigt sind. Stand 05.08.2025 umfasst die Recherche 355 Institute.
+	Methodik: Die Informationen wurden über systematische Desktop-Recherche aus öffentlich zugänglichen Quellen (u. a. Pressemitteilun-gen, Geschäftsberichte, Studien, Websites von Banken und Technolo-gieanbietern) erhoben und tabellarisch erfasst (siehe Anhang). Zur kon-textuellen Einordnung wurden zusätzlich aktuelle Studien und Marktana-lysen herangezogen, u. a. von Accenture (2024), McKinsey & Company (2024–2025), Publicis Sapient (2024), Roland Berger (2024), Statista (2025) und WWT Research (2025).
+Diese ermöglichen eine valide Einschätzung der globalen Entwicklungen und liefern Vergleichswerte zur Relevanz, Verbreitung und Wirkung von KI im Ban-kensektor.
+ 
+2.	Ergebnisse
+2.1.	Globale Verteilung von KI-Anwendungen in Banken
+USA ist führend bei KI-Anwendungen.
+Der mit Abstand höchste Einzelwert entfällt auf die USA, die mit 71 dokumen-tierten KI-Anwendungen an der Spitze stehen. Damit entfallen rund 20 % aller weltweit erfassten Fälle auf ein einziges Land. Diese Dominanz lässt sich durch mehrere strukturelle Ursachen erklären: die hohe Innovationskraft amerikani-scher Banken, die starke technologische Infrastruktur, die intensive Zusammen-arbeit mit großen Technologieunternehmen (z. B. Microsoft, Google, Amazon), sowie ein vergleichsweise innovationsfreundliches regulatorisches Umfeld. Die starke Abweichung zwischen Mittelwert (Ø 19,2 Anwendungen) und Median (4 Anwendungen) sowie die hohe Standardabweichung (47,4) weisen auf eine hochgradig ungleichmäßige Verteilung hin.
+Abbildung 2.1 KI-Projekte nach Land
+ 
+Deutschland und UK liegen gleichauf.
+Neben den USA zählen auch Deutschland und das Vereinigte Königreich mit jeweils 24 Anwendungen zu den führenden Nationen. In beiden Fällen handelt es sich um Länder mit großen, international agierenden Bankensektoren und strategischen Digitalisierungsinitiativen. Ebenfalls stark vertreten sind Länder wie Kanada (21 Anwendungen), Frankreich (20), die Schweiz (18) sowie Indien und Australien (jeweils 13). Diese Länder verfügen über weit entwickelte Finanz-systeme und eine wachsende Bereitschaft zur digitalen Transformation. Dem-gegenüber steht eine große Gruppe von Ländern mit sehr wenigen erfassten Anwendungen. In vielen Fällen liegt die Zahl unterhalb von fünf. 
+ 
+Abbildung 2.2 TOP 10 nach Länderm
+Rang	Land	Anzahl KI-Anwendungen
+1	USA	71
+2	Deutschland	24
+3	UK	24
+4	Kanada	21
+5	Frankreich	20
+6	Schweiz	18
+7	Indien	13
+8	Australien	13
+9	Singapur	12
+10	Spanien	12
+2.2.	Verteilung nach Kontinenten
+Europa ist stärkster KI-Kontinent.
+Die Auswertung nach Kontinenten zeigt, dass Europa mit 150 dokumentierten Anwendungen der führende Kontinent ist. Die Verteilung ist dabei nicht gleich-mäßig: Länder wie Deutschland, Großbritannien, Frankreich und die Schweiz stechen mit jeweils zweistelligen Fallzahlen hervor, während andere Staaten – insbesondere in Süd- und Osteuropa – nur vereinzelt Anwendungen verzeich-nen. Dies lässt sich durch die große Zahl teilnehmender Länder und die starke Bankenlandschaft erklären, insbesondere in Deutschland, UK, Frankreich und der Schweiz. Nordamerika, im Wesentlichen getragen durch die USA und Kana-da, folgt mit 94 Anwendungen.
+Abbildung 2.3 KI-Projekte nach Kontinent
+ 
+Asien und Nordamerika folgen deutlich.
+Asien erreicht mit 72 Anwendungen den dritten Platz – mit starkem Beitrag aus Ländern wie Indien, Singapur, Japan und China. Afrika (10 Anwendungen) und Australien (9 Anwendungen) zeigen eine deutlich geringere Verbreitung. Die kontinentale Verteilung zeigt, dass die globale KI-Adaption im Bankensektor von Europa, Nordamerika und Asien dominiert wird, während andere Regionen derzeit noch eine untergeordnete Rolle spielen.
+2.3.	Verteilung nach Einführungsjahr
+Genaue zeitliche Einordnung ist schwierig.
+Aufgrund der Untersuchungsmethodik ist eine genaue Bestimmung des Einfüh-rungstermins der betrachteten KI-Anwendungen mit Unsicherheiten verbunden. Häufig stammen die Informationen aus Pressemitteilungen, Fachartikeln oder Projektbeschreibungen, die zeitlich nachgelagert zur tatsächlichen Einführung veröffentlicht werden. Zudem kommunizieren Banken nicht immer zeitnah oder transparent über die konkrete Inbetriebnahme neuer Technologien. Um mög-lichst valide Aussagen treffen zu können, wurde bei der Zuordnung des Einfüh-rungsjahres eine Quellentriangulation vorgenommen: Es wurden mehrere un-abhängige öffentlich verfügbare Quellen pro Anwendungsfall abgeglichen.
+Abbildung 2.4 KI-Projekte nach Einführungsjahr
+ 
+Die Anzahl der produktiv umgesetzten KI-Anwendungen in Banken hat sich in den letzten Jahren dynamisch und beschleunigt entwickelt. Die zeitliche Vertei-lung lässt sich in drei Phasen gliedern:
+Pionierphase (2010–2015)
+Kennzeichnend für die Pionierphase sind experimentelle KI-Aktivitäten
+In den Jahren 2010 bis 2015 wurden lediglich 6 KI-Projekte eingeführt. Diese Phase war durch technologische Pionierarbeit und explorative Prototypen ge-kennzeichnet. Die Einführung beschränkte sich zumeist auf Pilotprojekte in spezialisierten Innovationsabteilungen.
+ 
+Frühphase der Skalierung (2016–2022)
+Erfolgreiche KI-Anwendungen ebneten den Weg zu weiteren KI-Investitionen.
+Ab 2016 ist ein kontinuierlicher Zuwachs zu beobachten:
+	Erste zweistellige Fallzahlen ab 2016 (13 Projekte),
+	Höchstwerte 2018 (32 Projekte) und 2019 (29),
+	Stabiles Niveau zwischen 2020 und 2022 mit jeweils 24 Projekten.
+Diese Phase zeigt den Übergang von der Forschung zur organisatorischen In-tegration einzelner KI-Lösungen, vor allem im Bereich Kundenservice und Da-tenverarbeitung.
+Beschleunigungsphase (2023–2024)
+2023/2024 sind Boomjahre der KI.
+In den Jahren 2023 und 2024 stieg die Zahl der neuen Projekte sprunghaft an – mit 88 bzw. 86 dokumentierten Anwendungen. Dies entspricht fast der Hälfte aller erfassten Fälle. Haupttreiber waren:
+	Die Verbreitung generativer KI (z. B. GPT-Modelle),
+	Fortschritte in Infrastruktur und Modellzugänglichkeit,
+	Zunehmender Wettbewerbsdruck, insbesondere durch FinTechs,
+	und eine steigende Zahl von produktiven Referenzbeispielen am Markt.
+Laufendes Jahr 2025
+In 2025 deutet sich ein erster Konsolidierungstrend an.
+Für 2025 wurden bis zum Auswertungszeitpunkt 8 KI-Projekte dokumentiert. Dieser Wert ist als Zwischenstand zu interpretieren, weil sich ca. 40 Projekte in der Qualitätssicherung zur Aufnahme in die Datenbank befinden. Möglicher-weise zeichnet sich aber auch eine neue Phase der Konsolidierung ab, in der Banken bestehende Systeme optimieren und integrieren, anstatt neue Use Cases zu pilotieren.
+2.4.	Verteilung nach Nutzergruppen
+Interne Nutzer dominieren den Anwenderkreis.
+Die meisten Anwendungen richten sich an interne Nutzer, wie z. B. Mitarbeiten-de im Kundenservice, in der IT, im Risikomanagement oder im Controlling. Das belegt die hohe Bedeutung von KI für die Automatisierung und Effizienzsteige-rung interner Prozesse.
+ 
+Abbildung 2.5 KI-Projekte nach Anwender
+ 
+Privatkunden sind zweitwichtigste Zielgruppe.
+Privatkunden folgen mit 161 Fällen auf Platz zwei – ein Hinweis auf die zuneh-mende Nutzung von KI zur Personalisierung von Beratung, Service und Produkt-angeboten. Dagegen sind Geschäftskunden mit nur aktuell 5 dokumentierten Anwendungen deutlich seltener Zielgruppe. Ebenso marginal ist der Anteil von Anwendungen für „andere Institute“. Hierzu zählen KI-Anwendungen, die Ban-ken anderen Instituten als Software-as-a-Service (SaaS) zur Verfügung stellen. Insgesamt verfolgen die Institute eine auf eher interne oder Endkunden-fokussierte KI-Strategie. Dies zeigt sich auch an der Verortung von KI-Anwendungen.
+Abbildung 2.6 KI-Projekte nach zentralen Organisationsbereichen
+  
+Front Office ist wichtigstes Einsatzfeld.
+
+Mit 206 dokumentierten Fällen ist das Front Office der mit Abstand wichtigste Anwendungsbereich. Hierunter fallen Anwendungen, die im direkten Kunden-kontakt oder in der Interaktion mit Kundendaten verankert sind. Dazu zählen:
+	Chatbots und Sprachassistenten,
+	Personalisierte Produktempfehlungen,
+	Automatisierte Kundenberatung,
+Diese Verteilung verdeutlicht, dass Banken KI primär als Mittel zur Verbesse-rung der Kundenerfahrung und zur Effizienzsteigerung im Vertrieb und Service einsetzen. In einem zunehmend digitalen Wettbewerbsumfeld gewinnt die Fä-higkeit, schnelle, präzise und individualisierte Angebote zu machen, strategisch an Bedeutung.
+Back Office dient der Prozessautomatisierung.
+Mit 84 Fällen ist das Back Office ebenfalls ein zentraler Einsatzbereich, wenn auch deutlich hinter dem Front Office. Typische Anwendungen umfassen:
+	CO-Pilots (Digitale Assistenten zur Unterstützung der Mitarbeiter im Ar-beitsalltag),
+	Dokumentenverarbeitung (OCR, Klassifikation),
+	Rechnungsabgleiche und Transaktionsverarbeitung,
+	Regulatorische Meldungen und Reporting-Prozesse.
+Diese Art von Anwendungen ist häufig technischer Natur und zielt auf Prozess-automatisierung, Kostenreduktion und Fehlervermeidung ab.
+Ki-Anwendungen im Middle Office stehen derzeit nicht im Fokus.
+Das Middle Office mit 65 Anwendungen bildet das Schlusslicht, obwohl es in vielen Banken eine Schlüsselrolle spielt – etwa im Risikomanagement, in der Compliance oder bei der Überwachung von Handelsaktivitäten. Hier könnte KI beispielsweise eingesetzt werden zur:
+	Erkennung von Anomalien und Risiken,
+	Betrugserkennung (Fraud Detection),
+	Sanktionslistenprüfung (AML/KYC),
+	Stresstests und Szenarioanalysen.
+Die vergleichsweise geringere Anzahl an KI-Anwendungen in diesem Bereich könnte auf erhöhte Erklärungsbedarfe (Explainability) oder technologische Komplexität hinweisen.
+Banken setzen KI vorrangig im Front Office ein, wo sich schnelle Effizienzgewin-ne oder unmittelbare Kundennutzen erzielen lassen. Die Potenziale in Middle- und Back-Office-Prozessen werden zwar zunehmend erkannt, jedoch (noch) nicht im gleichen Maße realisiert.
+2.5.	Verteilung nach Nutzenpotential
+KI steigert vorrangig die Effizienz.
+Ein zentrales Kriterium zur Bewertung des Einsatzes von KI in Banken ist die Zielsetzung bzw. der strategische Nutzen, den Institute durch den Einsatz sol-cher Technologien realisieren möchten. Bei der Interpretation der Ergebnisse ist zu beachten, dass viele KI-Anwendungen nicht ausschließlich einem einzel-nen Ziel zugeordnet werden können. In der Praxis adressieren zahlreiche Lösun-gen gleichzeitig mehrere Nutzenpotenziale. So kann ein Chatbot im Kundenser-vice etwa Effizienz steigern und die Kundenerfahrung verbessern.
+Mit 221 dokumentierten Anwendungen ist die Effizienzsteigerung der mit Ab-stand häufigste Nutzenfokus. Banken setzen KI vorrangig ein, um manuelle Pro-zesse zu automatisieren, Kosten zu senken und Durchlaufzeiten zu verkürzen – etwa durch Dokumentenklassifikation, Betrugserkennung oder automatisierte Bearbeitung von Kundenanfragen. Dies belegt eine stark operativ geprägte Digitalstrategie vieler Institute.
+Abbildung 2.7 Verteilung nach Nutzenpotential
+ 
+Fokussierung auf Kundenerlebnis
+Kundenerlebnis gewinnt an Bedeutung.
+180 Anwendungen zielen auf die Verbesserung der Kundenerfahrung. Dazu ge-hören vor allem Chatbots, personalisierte Produktempfehlungen und intelligen-te Assistenten im Vertrieb. Dieser hohe Wert zeigt: Banken erkennen zuneh-mend, dass digitale Servicequalität ein Wettbewerbsvorteil ist – insbesondere gegenüber neobankenartigen Fintechs mit nativ digitalen Kundenlösungen.
+Leistungs- und Erkenntnisgewinne
+Mit 114 Anwendungen verfolgt ein beträchtlicher Teil der KI-Projekte das Ziel der Leistungssteigerung, beispielsweise durch bessere Risikomodelle, automa-tische Portfolioanalysen oder intelligenten Ressourceneinsatz. Ergänzend dazu streben 90 Anwendungen explizit Datenanalyse und Erkenntnisgewinn an – was sich in der Nutzung von Machine Learning für Mustererkennung, Forecasts oder Entscheidungsunterstützung niederschlägt.
+Zukunftssicherung und strategischer Vorsprung
+67 Anwendungen adressieren die Themen Innovation und Zukunftssicherheit, etwa durch explorativen Einsatz generativer KI, neue digitale Produkte oder lernfähige Prozesse. Weitere 49 Fälle benennen explizit den angestrebten Wettbewerbsvorteil – ein Zeichen dafür, dass einige Banken KI bereits als diffe-renzierendes Merkmal in der Marktpositionierung betrachten.
+Compliance und IT-Sicherheit: Potenziale noch nicht ausgeschöpft
+Compliance und IT-Sicherheit unter-repräsentiert.
+Bemerkenswert gering sind die Zahlen in den besonders regulierungsrelevan-ten Bereichen:
+	Compliance: Nur 36 Anwendungen verfolgen explizit dieses Ziel – trotz hoher regulatorischer Anforderungen im Bankenbereich. Dies deutet auf Nachholbedarf in der KI-gestützten Einhaltung gesetzlicher Vorgaben (z. B. Geldwäsche, ESG-Reporting).
+	IT-Sicherheit: Lediglich 17 Anwendungen nennen Cybersecurity als pri-märes Nutzenziel. Dies überrascht angesichts steigender Bedrohungs-lagen und der wachsenden Abhängigkeit von KI selbst.
+Front Office spiegelt Nutzenpriorität wider.
+Der KI-Einsatz in Banken ist aktuell stark pragmatisch motiviert. Die überwie-gende Mehrheit der Projekte verfolgt kurzfristig realisierbare Ziele wie Effizienz, Kostenoptimierung und Kundenservice. Wie zuvor dargestellt, entfällt mit 206 von 355 Anwendungen der größte Teil auf das Front Office. Dies passt zu den dominierenden Nutzenzielen: Kundenerfahrung und Effizienz sind klassische Optimierungsfelder im direkten Kundenkontakt – etwa im Vertrieb, bei Produkt-angeboten oder in Serviceprozessen.
+Interne Use Cases dominieren die KI-Anwendungslandschaft.
+Die mit Abstand größte Anwendergruppe ist das interne Personal (188 Anwen-dungen), gefolgt von Privatkunden (161 Anwendungen). Die stark operative Ziel-setzung der meisten KI-Anwendungen (Effizienz, Leistung) passt gut zum hohen Anteil interner Use Cases, etwa zur Automatisierung interner Prozesse, zur Ent-scheidungsunterstützung oder zur Prozesssteuerung.
+Gleichzeitig zeigt die starke Verankerung im Front Office, dass kundenorientier-te KI-Systeme einen hohen Reifegrad aufweisen – sichtbar z. B. an 180 Anwen-dungen mit dem Ziel der Kundenerfahrung. Die strategischen Nutzenziele wie Wettbewerbsvorteil (49 Fälle) oder Innovation (67 Fälle) sind deutlich seltener – und spiegeln den noch niedrigen Anteil an experimentellen, strategisch neuar-tigen KI-Initiativen wider.
+2.6.	Verortung in der KI-Landkarte
+Die Analyse verwendet eine „KI-Landkarte“ zur Klassifizierung der KI-Anwendungsfälle entlang typischer bankfachlicher Funktionen und Prozessbe-reiche. Dieses unterscheidet verschiedene Bereiche des Bankbetriebs – von Kundenprozessen über Produkte & Preise, Betriebssteuerung, Marketing & Ver-trieb bis hin zu technischen Querschnittsthemen wie IT-Sicherheit und Daten-management. Dadurch wird sichtbar, wo innerhalb der Bankorganisation KI tat-sächlich zum Einsatz kommt, und mit welcher Frequenz.
+Die KI-Landkarte stellt keinen starren Kategorisierungsrahmen dar, in dem jede KI-Anwendung exakt einem Bereich zugeordnet ist. Vielmehr handelt es sich um ein mehrdimensionales Klassifikationsmodell, das den komplexen Einsatz von KI in Banken abbilden soll. Viele Anwendungen decken mehrere Funktionen oder Nutzenziele gleichzeitig ab – entsprechend können sie auch mehrfach in der KI-Landkarte verortet sein.
+Abbildung 2.8 Verortung der KI-Anwendungen in der KI-Landkarte
+ 
+Kundenbindung & Service – Zentrum der KI-Strategie
+Kundenservice ist zentrales Anwendungsfeld.
+Mit 162 Anwendungen ist dieser Bereich das mit Abstand aktivste KI-Feld in Banken. Hierzu zählen z. B. Chatbots, Serviceautomatisierung, Reaktionsintelli-genz in Kundenportalen und Personalisierungsmechanismen. Diese Daten be-stätigen die zuvor gezeigte starke Verankerung von KI im Front Office sowie die häufig verfolgten Ziele „Kundenerlebnis“ und „Effizienz“.
+Produkte & Preise – Datenbasierte Produktlogik
+105 Anwendungen beziehen sich auf produktbezogene Funktionen: z. B. KI-basierte Preisfindung, Kreditentscheidungen, Angebotspersonalisierung oder Portfolioempfehlungen. Diese Zahl belegt, dass Banken zunehmend Daten und Modelle zur dynamischen Steuerung ihrer Produktarchitektur einsetzen – ein Trend, der sich mit dem wachsenden Einsatz von Recommendation Engines und Scoring-Algorithmen deckt.
+ 
+Betriebliche Steuerung – KI als internes Optimierungswerkzeug
+Mit 80 Fällen belegt dieser Bereich den dritten Platz. Hierunter fallen z. B.:
+	Prozessautomatisierung in Controlling oder Finanzen
+	Ressourcenplanung
+	Workflow-Optimierung
+Die hohe Fallzahl passt zur hohen internen Anwenderquote und dem dominan-ten Ziel „Effizienzsteigerung“.
+Marketing & Vertrieb – Datengetriebene Kundenansprache
+48 Anwendungen verorten sich im Marketingkontext, z. B. durch Segmentie-rungsmodelle, Kampagnen-Optimierung oder Conversion-Analysen. Auch diese Kategorie stärkt das Bild einer kundenorientierten, datengetriebenen KI-Strategie im Bankenvertrieb.
+Technologische Infrastruktur: Daten, IT & Sicherheit
+Technische Bereiche sind weniger präsent.
+Die drei folgenden Bereiche sind eher technisch oder unterstützend geprägt:
+	Datenmanagement (36): etwa bei Datenbereinigung, Feature Enginee-ring oder Metadatenanalysen
+	IT & IT-Sicherheit (30): inklusive Intrusion Detection, Authentifizierungs-systemen oder Cyber-Überwachung
+	Querschnittsfunktionen (21): z. B. Wissensmanagement, Compliance-Checklisten oder Modellmonitoring
+Obwohl diese Kategorien technologisch zentral sind, zeigt ihre geringere Fall-zahl, dass viele KI-Projekte zunächst fachlich-funktional verankert werden, be-vor technische Infrastrukturen optimiert werden.
+Risikomanagement und Onboarding – unterrepräsentiert
+Risikothemen sind bislang schwach erschlossen.
+Trotz hoher regulatorischer Anforderungen und Relevanz zeigen sich Risikoma-nagement (19 Anwendungen) und Onboarding & Legitimation (9 Anwendungen) als bisher unterentwickelte Felder. Dies ist bemerkenswert, da gerade diese Bereiche durch Predictive Analytics, biometrische Legitimation oder fraud de-tection besonders profitieren könnten – jedoch zugleich hohen Anforderungen an Datenschutz, Modelltransparenz und Revisionssicherheit unterliegen.
+Die Analyse der KI-Landkarte bestätigt das bisherige Gesamtbild:
+	Der Fokus liegt auf kundenorientierten, vertriebsnahen und produktiven Anwendungsfeldern,
+	mit einem starken operativen Fokus auf Servicequalität, Angebotssteu-erung und Effizienz.
+	Unterstützende oder regulierungsnahe Felder (Risikomanagement, Compliance, IT-Sicherheit) sind unterrepräsentiert – nicht zwingend we-gen fehlender Relevanz, sondern vermutlich aufgrund höherer Umset-zungshürden.
+KI-Fokus liegt auf messbaren Effekten.
+Damit zeigt sich erneut, dass der derzeitige Einsatz von KI in Banken von schnellen, messbaren Business-Impacts getrieben – jedoch noch nicht syste-matisch auf alle zentralen Bankfunktionen ausgerollt ist.
+2.7.	Risikoklassifizierung nach dem EU AI-Act
+Die folgende Analyse basiert auf einer Kategorisierung der KI-Anwendungen nach den Vorgaben des EU AI Acts – der seit 2024 geltenden EU-Verordnung zur Regulierung künstlicher Intelligenz. Eine Herausforderung bestand darin, KI-Anwendungen außerhalb der EU in die Systematik nach dem EU AI Act einzu-ordnen. Dazu wurde ein Vergleich mit entsprechenden Systemen vorgenom-men, die gleiche bzw. vergleichbare Funktionalitäten aufweisen.
+Mehr als 90 % aller Anwendungen fallen in die beiden unteren Risikoklassen:
+	192 Anwendungen in Klasse II (limitiertes Risiko),
+	141 Anwendungen in Klasse I (minimales Risiko).
+Diese beiden Klassen betreffen vor allem:
+	Chatbots und Empfehlungssysteme (Klasse II),
+	interne Assistenzsysteme, Automatisierung, Analysemodelle (Klasse I).
+Über 90 % der Systeme unterliegen einfachen Vorgaben.
+Das bedeutet: Der überwiegende Teil der KI-Lösungen in Banken ist nicht mit strengen regulatorischen Auflagen verbunden, sondern kann – bei Einhaltung einfacher Transparenzpflichten – relativ unbürokratisch eingesetzt werden. Dies spiegelt die bisherige Feststellung wider, dass Banken vor allem auf pragmatisch einsetzbare, operationell nutzbare KI setzen.
+ 
+Hochrisiko-KI nur selten, aber strategisch sensibel
+22 Anwendungen wurden der Klasse III („hohes Risiko“) zugeordnet. Diese erfor-dern laut EU AI Act unter anderen:
+	Risikomanagementsysteme,
+	technische Dokumentation,
+	Menschliche Aufsicht der KI durch natürliche Personen mit der erforder-lichen Kompetenz,
+	Erklärbarkeit und Nachvollziehbarkeit.
+Beispiele hierfür sind:
+	Automatisierte Kreditwürdigkeitsprüfungen,
+	KYC-Prozesse mit biometrischer Analyse,
+	AI-gesteuerte Risikomodelle,
+	Entscheidungssysteme mit hohem Kundeneinfluss.
+Trotz ihrer geringen Anzahl haben diese Anwendungen eine überproportional hohe Relevanz, da sie direkt in regulatorisch sensible Prozesse eingreifen und ggf. die Rechtsstellung von Kunden betreffen. 
+Keine Anwendungen mit unannehmbarem Risiko
+Die Kategorie Klasse IV (unannehmbar) bleibt erwartungsgemäß leer. Dies ent-spricht dem gesetzlichen Rahmen, der bestimmte KI-Systeme – etwa für sozia-le Bewertung, biometrisches Massentracking oder manipulative Techniken – explizit verbietet. Solche Systeme spielen im klassischen Bankensektor keine Rolle.
+Abbildung 2.9 Verteilung nach Risikoklassifizierung EU AI-Act
+ 
+ 
+ 
+Quellenverzeichnis
+1.	Accenture. (2024). Banking Top 10 Trends 2024. Accenture. https://www.accenture.com/content/dam/accenture/final/industry/banking/document/Accenture-Banking-Top-10-Trends-2024.pdf
+2.	Castelnovo, C. (2024). Responsible AI in Credit Decisioning. arXiv. https://arxiv.org/abs/2401.08691
+3.	Citi & Financial News. (2024). Banks Eye $170bn AI Profit Boost. https://www.fnlondon.com/articles/banks-eye-170bn-profit-boost-from-ai-adoption-f9acb65c
+4.	Kovacevic, M., Hegedüs, I., & Nguyen, M. (2024). Adversarial Risks in Banking AI Systems. arXiv. https://arxiv.org/abs/2412.04495
+5.	McKinsey & Company. (2024a). How banks can turn AI’s promise into real impact. https://www.mckinsey.com/industries/financial-services/our-insights/banking-matters/how-banks-can-turn-ais-promise-into-real-impact
+6.	McKinsey & Company. (2024b). The State of AI in 2024. https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-2024
+7.	Publicis Sapient. (2024). 2024 GBBs Key Takeaways. https://www.publicissapient.com/insights/2024-gbbs-key-takeaways
+8.	Rolad Berger (2024). Bracing for impact – The AI transformation in banking. https://www.rolandberger.com/en/Insights/Publications/Bracing-for-impact-The-AI-transformation-in-banking.html
+9.	Saha, P., Shukla, S., & Jain, R. (2025). Survey on GenAI Adoption in Finance. arXiv. https://arxiv.org/abs/2504.21574
+10.	Statista (2025). Künstliche Intelligenz 2025. https://de.statista.com/statistik/studie/id/116984/dokument/kuenstliche-intelligenz/
+11.	WWT Research. (2025). AI and Automation in Banking. https://www.wwt.com/wwt-research/ai-and-automation-in-banking-transforming-workplace-services
+ 
+Anhang
+Datenbankschema zur Erfassung der KI-Anwendungen
+Attribute und Merk-male	Inhalt
+ID	Fortlaufende Nummerierung der Use Cases
+Land	Geografische Lokalisierungdes Hauptsitzes der Bank
+Unternehmensname	Name der Bank
+Projektname	Nennung des Namens der KI-Anwendung (optio-nales Feld).
+Ausgangssituation	Beschreibung der Motivation der Banken, die dazu führten, dass die Anwendung eingeführt wurde.
+Detaillierte Beschrei-bung	Ausführliche Darstellung der KI-Anwendung.
+Verortung	Verortung, ob die Anwendung zum Front-, Middle- oder Back-Office zählt.
+Anwendung von KI	Benennung, auf welcher Funktionsweise die KI- Anwendung basiert.
+Zuordnung KI-Landkarte	Verortung der Anwendungen in der KI-Landkarte. (Mehrfacheinträge möglich)
+Nutzenpotentiale	Bestimmung des Nutzens bzw. des Mehrwertes der KI-Anwendung aus Sicht der Bank. (Mehrfach-einträge möglich)
+Endanwender	Anwender der KI-Anwendung
+Einführungsjahr	Datierung der Einführung.
+Finanzdienstleiter-Typ	Auswahl des Finanzdienstleistertyps, insbesonde-re Retailbank und Geschäftsbank.
+Technologieanbieter	Optionales Feld zur Erfassung der Technologie-partner
+Status	Status der Anwendung.
+Notizen	Freitextfeld für optionale ergänzende Hinweise und Informationen.
+Quellen	Sammlung von entsprechenden URLs für alle ent-haltenen Informationen.
+ 
+Kontakt
+
+
+
+
+
+
+
+
+
+
+
+
+Prof. Dr. Dirk Neuhaus, MBA
+Professur für Informationssysteme in Finanzdienstleistungsunternehmen
+Hochschule für Finanzwirtschaft & Management
+Simrockstraße 4 | 53113 Bonn
+
+Tel.: ++49-(0)228 204-9936 
+E-Mail: dirk.neuhaus@s-hochschule.de
+
+ 
+
